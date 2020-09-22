@@ -7,5 +7,6 @@ steps:
 - name: greeting
   image: golang:1.15
   commands:
+  - echo "Test secret: '$test'"
   - go build
   - go test
